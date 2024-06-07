@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CA Quiz App</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="start-container">
+        <h1>Welcome to Current Affairs Mock Drill</h1>
+        <label for="candidateName">Enter your name:</label>
+        <input type="text" id="candidateName" placeholder="Your Name (Max 10 characters)">
+        <button id="startQuiz">Start Quiz</button>
+    </div>
+    <div class="quiz-container" style="display:none;">
+        <h1>Current Affairs Mock Drill</h1>
+        <div id="timer">Time: 00:00</div>
+        <div id="quiz"></div>
+        <div class="navigation">
+            <button id="prev">Previous</button>
+            <button id="next">Next</button>
+        </div>
+        <button id="submit">Submit Quiz</button>
+    </div>
+    <div id="results" class="results-container" style="display:none;">
+        <h1>Solution Page</h1>
+        <div id="candidateInfo"></div>
+    </div>
+    <script src="js/quiz.js"></script>
+</body>
+</html>
